@@ -1,0 +1,24 @@
+{
+  "name": "ocean-evolution",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace @ocean/game",
+    "build": "npm run build --workspace @ocean/game",
+    "map": "tsx tools/map/render.ts",
+    "typecheck": "tsc --noEmit -p packages/sim && tsc --noEmit -p packages/game",
+    "check:determinism": "bash tools/check-determinism.sh",
+    "check:world": "tsx tools/check-world.ts",
+    "check": "npm run check:determinism && npm run check:world && npm run typecheck"
+  },
+  "devDependencies": {
+    "playwright-core": "^1.65.1",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.0",
+    "vite": "^5.4.0"
+  }
+}
