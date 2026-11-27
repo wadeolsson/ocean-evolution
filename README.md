@@ -8,6 +8,8 @@ This repository is at **Phase 1.5 of 8**: the world, its vegetation, its caves
 and its water, and a camera to look at them with. There are no creatures, no
 food web and no evolution yet.
 
+![A reef dropping off into deep water](docs/hero-reef-dropoff.jpg)
+
 ```bash
 npm install
 npm run dev     # http://127.0.0.1:8040  -- fly through the world
@@ -20,6 +22,27 @@ times a second, so any spot in the ocean is a link you can bookmark or send.
 Pasting a link into an already-open tab moves the camera rather than reloading.
 
 ---
+
+## The biomes, from one seed
+
+Every image below is the same world, rendered by `npm run map` from a single
+seed. Biome boundaries are not placed; they fall out of depth, light, substrate
+and distance from shore.
+
+<table>
+<tr>
+<td width="33%" align="center"><img src="docs/kelp-forest.jpg" width="100%"><br><sub><b>Kelp forest</b></sub></td>
+<td width="33%" align="center"><img src="docs/rocky-caves.jpg" width="100%"><br><sub><b>Rocky caves</b></sub></td>
+<td width="33%" align="center"><img src="docs/canyon.jpg" width="100%"><br><sub><b>Submarine canyon</b></sub></td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td width="50%" align="center"><img src="docs/vent-field.jpg" width="100%"><br><sub><b>Abyssal vent field</b> — the only biome whose productivity does not depend on light</sub></td>
+<td width="50%" align="center"><img src="docs/world-overview.jpg" width="100%"><br><sub><b>The whole world</b> at map scale</sub></td>
+</tr>
+</table>
 
 ## The one architectural decision
 
